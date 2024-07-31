@@ -1,5 +1,8 @@
 #!/bin/bash
-
+## Symlink to EFS_dev
+# Authors: Sibi Jose
+# Redux
+# Date: 31 July 2024
 # Define variables
 LOG_DIR="/home/sftpuser/server_logs"
 EFS_LOG_DIR="/efs-dev/server_logs"
