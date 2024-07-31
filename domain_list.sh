@@ -1,5 +1,8 @@
 #!/bin/bash
-
+## Script to list domains
+# Authors: Sibi Jose
+# Redux
+# Date: 31 July 2024
 # Define the output file
 DOMAIN_FILE="domains.txt"
 
