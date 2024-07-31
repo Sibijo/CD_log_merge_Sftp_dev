@@ -1,5 +1,8 @@
 #!/bin/bash
-
+## Script to update apache config_dev
+# Authors: Sibi Jose
+# Redux
+# Date: 31 July 2024
 # Define variables
 LOG_DIR="/shared-storage/server_logs"
 LOG_USER="deploy"
