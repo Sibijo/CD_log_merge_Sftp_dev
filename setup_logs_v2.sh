@@ -1,5 +1,8 @@
 #!/bin/bash
-
+## Script to setup symlink SFTP to EFS
+# Authors: Sibi Jose
+# Redux
+# Date: 31 July 2024
 # Define variables
 LOG_DIR="/home/sftpuser/server_logs"
 EFS_LOG_DIR="/efs-dev/server_logs"
