@@ -2,9 +2,9 @@
 
 # Define variables
 LOG_DIR="/home/sftpuser/server_logs"
-EFS_LOG_DIR="/efs-dev/server_logs"
+EFS_LOG_DIR="/efs-prod/server_logs"
 USER="sftpuser"
-DOMAIN_FILE="domains.txt"
+DOMAIN_FILE="domains2.txt"
 
 # Check if the domain file exists
 if [ ! -f "$DOMAIN_FILE" ]; then
