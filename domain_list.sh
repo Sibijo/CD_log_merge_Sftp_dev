@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the output file
-DOMAIN_FILE="domains.txt"
+DOMAIN_FILE="domains2.txt"
 
 # Extract domain names, remove comments and empty lines
 grep -rE "ServerName|ServerAlias" /etc/apache2/sites-available /etc/apache2/sites-enabled | \
