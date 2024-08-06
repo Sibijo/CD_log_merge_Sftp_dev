@@ -86,7 +86,7 @@ done < "$DOMAINS_FILE"
 
 # Reload Apache
 echo "Reloading Apache..."
-#systemctl reload apache2
+systemctl reload apache2
 
 echo "Webserver configuration complete for all domains. Modified configuration files are logged in $MODIFIED_FILES_LOG."
 echo "Backup of original configuration files is stored in $BACKUP_DIR."
