@@ -4,7 +4,7 @@
 SITES_ENABLED_DIR="/etc/apache2/sites-enabled"
 
 # Define the output file
-OUTPUT_FILE="domain2.txt"
+OUTPUT_FILE="domains2.txt"
 
 # Create or clear the output file
 > $OUTPUT_FILE
