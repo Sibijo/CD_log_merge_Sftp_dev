@@ -7,7 +7,7 @@ LOG_GROUP="deploy"
 APACHE_CONF_DIR="/etc/apache2/sites-available"
 MODIFIED_FILES_LOG="/tmp/modified_apache_conf_files.log"
 BACKUP_DIR="/etc/apache2/sites-available/backup_$(date +%Y%m%d%H%M%S)"
-DOMAINS_FILE="domains.txt"
+DOMAINS_FILE="domains2.txt"
 
 # Create the log directory if it doesn't exist
 mkdir -p "$LOG_DIR"
