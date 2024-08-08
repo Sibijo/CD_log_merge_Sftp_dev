@@ -14,7 +14,8 @@ DOMAINS_FILE="domains.txt"
 
 # Create the log directory if it doesn't exist
 mkdir -p "$LOG_DIR"
-
+# Change ownership of the log directory and its contents
+chown -R "$LOG_USER:$LOG_GROUP" "$LOG_DIR"
 # Create the backup directory
 mkdir -p "$BACKUP_DIR"
 
@@ -52,7 +53,7 @@ while IFS= read -r domain; do
         touch "$error_log_path" "$access_log_path"
 
         # Change ownership of log files
-        chown "$LOG_USER:$LOG_GROUP" "$error_log_path" "$access_log_path"
+        chown -R "$LOG_USER:$LOG_GROUP" "$LOG_DIR"
 
         # Backup the original configuration file
         cp "$conf_file" "$BACKUP_DIR/"
@@ -73,7 +74,7 @@ while IFS= read -r domain; do
         touch "$error_log_path" "$access_log_path"
 
         # Change ownership of log files
-        chown "$LOG_USER:$LOG_GROUP" "$error_log_path" "$access_log_path"
+       # chown "$LOG_USER:$LOG_GROUP" "$error_log_path" "$access_log_path"
 
         # Backup the original configuration file
         cp "$ssl_conf_file" "$BACKUP_DIR/"
